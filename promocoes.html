@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="assets/imagens/logo-esteticar.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>EstetiCar</title>
+</head>
+
+<body>
+    <header class="flex">
+        <a href="index.html"><img src="assets/imagens/logo-esteticar.png" alt="Logo" class="logo"></a>
+        <nav class="menu">
+            <ul id="nav-links" class="nav-links">
+                <li class="menuinf"><a href="index.html" class="menu-link">Home</a></li>
+                <li class="menuinf"><a href="quemsomos.html" class="menu-link">Quem Somos</a></li>
+                <li class="menuinf"><a href="servicos.html" class="menu-link">Serviços</a></li>
+                <li class="menuinf"><a href="promocoes.html" class="menu-link">Promoções</a></li>
+                <li class="menuinf"><a href="localizacao.html" class="menu-link">Localização</a></li>
+                <li class="menuinf"><a href="contato.html" class="menu-link">Contato</a></li>
+            </ul>
+        </nav>
+        <button class="btn btn-mobile">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <main>
+        <section>
+            <h1 class="promocao-titulo">Promoções</h1>
+            <h2 class="promocao-titulo2">Aproveite nossas promoções e agende seu serviço com a Esteticar hoje mesmo!
+            </h2>
+            <p class="promocao-paragrafo">Na Esteticar, nós valorizamos os nossos clientes e estamos sempre procurando
+                maneiras de oferecer serviços de qualidade com preços acessíveis. Por isso, lançamos diversas promoções
+                especiais para que você possa cuidar da estética do seu carro sem pesar no bolso. Confira as nossas
+                promoções abaixo:</p>
+
+            <article class="flex-promocao">
+                <figure class="imagens-promocao">
+                    <img src="assets/imagens/lavagem4.jpg" alt="" class="promocao-imagem">
+                    <img src="assets/imagens/higienizacao-interna2.jpg" alt="" class="promocao-imagem">
+                </figure>
+                <div class="promocao-textos">
+                    <h3 class="titulo-promocao">Combo de lavagem a seco e Higienização interna</h3>
+                    <p class="paragrafo-promocao">Por apenas R$ 150,00. Este combo é ideal para quem deseja deixar o
+                        carro limpo por dentro e por fora, sem gastar muito. Nós utilizamos produtos de alta qualidade
+                        para garantir que o seu carro fique completamente higienizado e livre das sujeiras.</p>
+                    <form onsubmit="enviarWhats(event)">
+                        <div class="botao-centro">
+                            <button type="submit" class="botao-promocao">Agendar Serviço</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <article class="flex-promocao">
+                <figure class="imagens-promocao">
+                    <img src="assets/imagens/polimento1.jpg" alt="" class="promocao-imagem">
+                    <img src="assets/imagens/cristalizacao3.jpg" alt="" class="promocao-imagem">
+                </figure>
+                <div class="promocao-textos">
+                    <h3 class="titulo-promocao">Polimento + Cristalização</h3>
+                    <p class="paragrafo-promocao">Com 10% de desconto. Para quem deseja deixar a pintura do carro
+                        brilhando, essa é uma ótima oportunidade. Nós utilizamos técnicas e produtos de alta qualidade
+                        para polir e cristalizar a pintura, deixando-a com um aspecto renovado e protegida contra danos
+                        externos.</p>
+                    <form onsubmit="enviarWhats(event)">
+                        <div class="botao-centro">
+                            <button type="submit" class="botao-promocao">Agendar Serviço</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <article class="flex-promocao">
+                <figure class="imagens-promocao">
+                    <img src="assets/imagens/aspiracao.jpg" alt="" class="promocao-imagem">
+                    <img src="assets/imagens/tratamento-pintura4.jpg" alt="" class="promocao-imagem">
+                </figure>
+                <div class="promocao-textos">
+                    <h3 class="titulo-promocao">Combo de lavagem a seco + Higienização interna + Tratamento de pintura
+                    </h3>
+                    <p class="paragrafo-promocao">Por apenas R$ 350,00. Este combo é ideal para quem deseja fazer uma
+                        limpeza completa e ainda proteger a pintura do carro. Nós utilizamos produtos de alta qualidade
+                        e técnicas especiais para garantir um resultado impecável.</p>
+                    <form onsubmit="enviarWhats(event)">
+                        <div class="botao-centro">
+                            <button type="submit" class="botao-promocao">Agendar Serviço</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+
+            <article class="flex-promocao">
+                <figure class="imagens-promocao">
+                    <img src="assets/imagens/revitalizacao.jpg" alt="" class="promocao-imagem">
+                    <img src="assets/imagens/farois1.jpg" alt="" class="promocao-imagem">
+                </figure>
+                <div class="promocao-textos">
+                    <h3 class="titulo-promocao">Revitalização de plásticos e borrachas</h3>
+                    <p class="paragrafo-promocao">Com 15% de desconto. Se você deseja deixar as peças plásticas e
+                        borrachas do carro renovadas, essa é a promoção perfeita. Nós utilizamos produtos específicos
+                        para revitalizar essas peças e deixá-las com um aspecto de novo.</p>
+                    <form onsubmit="enviarWhats(event)">
+                        <div class="botao-centro">
+                            <button type="submit" class="botao-promocao">Agendar Serviço</button>
+                        </div>
+                    </form>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <section class="rodape">
+            <a href="index.html"><img src="assets/imagens/logo-esteticar.png" alt="Logo" class="rodape-logo"></a>
+            <h3>Redes Sociais</h3>
+            <ul class="redes-sociais">
+                <li><a href="#"><i class="bi bi-instagram icons"></i></a></li>
+                <li><a href="#"><i class="bi bi-whatsapp icons"></i></a></li>
+                <li><a href="#"><i class="bi bi-facebook icons"></i></a></li>
+            </ul>
+        </section>
+
+        <section class="rodape">
+            <h3>Informações de Contato</h3>
+            <ul class="contatos">
+                <li class="inf">Telefone: (11) 98765-4321</li>
+                <li class="inf">Facebook: facebook.com/esteticar.cotia</li>
+                <li class="inf">Instagram: @esteticar_cotia</li>
+            </ul>
+        </section>
+        <section class="rodape">
+            <h3>Horário Funcionamento</h3>
+            <ul class="contatos">
+                <li class="inf">Seg - Sex 8:00 às 18:00 Sábado: 8:00 às 14:00</li>
+                <li class="inf">Av. José Giorgi, 120 - Granja Viana II, Cotia - SP, 06707-100</li>
+            </ul>
+        </section>
+    </footer>
+    <p class="copyright">© Desenvolvido por <a href="https://www.linkedin.com/in/rebeccalobato/" class="linkdin">Rebecca
+            Lobato</a></p>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
